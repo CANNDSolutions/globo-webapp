@@ -11,7 +11,7 @@ resource "aws_ssm_parameter" "host_list" {
 
 resource "aws_ssm_parameter" "site_name" {
   name  = local.site_name_ssm_name
-  type  = string
+  type  = "String"
   value = "${local.name_prefix}-tago-wagon"
 }
 
